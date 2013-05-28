@@ -1,0 +1,36 @@
+{
+  "name": "wBoiler",
+  "title": "wBoiler",
+  "description": "A jQuery boilerplate with some simple scaffolding to start building jQuery plugins.",
+  "keywords": [
+    "websanova",
+    "wBoiler",
+    "boilerplate"
+  ],
+  "version": "1.0.0",
+  "author": {
+    "name": "Websanova",
+    "email": "rob@websanova.com",
+    "url": "http://websanova.com"
+  },
+  "maintainers": [
+    {
+      "name": "Websanova",
+      "email": "rob@websanova.com",
+      "url": "http://websanova.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/websanova/wBoiler#license"
+    }
+  ],
+  "bugs": "https://github.com/websanova/wBoiler/issues",
+  "homepage": "http://wboiler.websanova.com",
+  "docs": "https://github.com/websanova/wBoiler#wboilerjs",
+  "download": "https://github.com/websanova/wBoiler/tags",
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}
