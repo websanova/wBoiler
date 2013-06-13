@@ -4,6 +4,7 @@ A jQuery boilerplate with some simple scaffolding to start building jQuery plugi
 
 * [Download the lastest version of wBoiler](https://github.com/websanova/wBoiler/tags)
 
+
 ## wBoiler Plugins
 
 * [wSelect](http://wselect.websanova.com) - Custom select boxes.
