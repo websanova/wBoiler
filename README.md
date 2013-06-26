@@ -1,6 +1,6 @@
 # wBoiler.js
 
-A jQuery boilerplate with some simple scaffolding to start building jQuery plugins.
+A jQuery plugin development boilerplate with some simple scaffolding to start building jQuery plugins.
 
 * [Download the lastest version of wBoiler](https://github.com/websanova/wBoiler/tags)
 
@@ -16,7 +16,6 @@ A jQuery boilerplate with some simple scaffolding to start building jQuery plugi
 ## Resources
 
 * [More jQuery plugins by Websanova](http://websanova.com/plugins)
-* [jQuery Plugin Development Boilerplate](http://www.websanova.com/blog/jquery/jquery-plugin-development-boilerplate)
 * [The Ultimate Guide to Writing jQuery Plugins](http://www.websanova.com/blog/jquery/the-ultimate-guide-to-writing-jquery-plugins)
 
 

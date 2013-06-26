@@ -1,7 +1,7 @@
 {
   "name": "wBoiler",
   "title": "wBoiler",
-  "description": "A jQuery boilerplate with some simple scaffolding to start building jQuery plugins.",
+  "description": "A jQuery plugin development boilerplate with some simple scaffolding to start building jQuery plugins.",
   "keywords": [
     "websanova",
     "wBoiler",
