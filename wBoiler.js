@@ -27,7 +27,7 @@
                 this.bindMobile(this.$boiler);
             }
 
-            return this.$boiler;
+            return this;
         },
 
         setTheme: function(theme) {
@@ -66,12 +66,13 @@
 
     $.fn.wBoiler = function(options, value) {
         if (typeof options === 'string') {
-            var values = [];
-            var elements = this.each(function() {
-                var wBoiler = $(this).data('wBoiler');
+            var values = [], wBoiler = null, elements = null, func = null;
+            
+            elements = this.each(function() {
+                wBoiler = $(this).data('wBoiler');
 
                 if (wBoiler) {
-                    var func = (value ? 'set' : 'get') + options.charAt(0).toUpperCase() + options.substring(1).toLowerCase();
+                    func = (value ? 'set' : 'get') + options.charAt(0).toUpperCase() + options.substring(1).toLowerCase();
 
                     if (wBoiler[options]) {
                         wBoiler[options].apply(wBoiler, [value]);
