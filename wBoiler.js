@@ -24,7 +24,7 @@
         generate: function() {
             if (!this.$boiler) {
                 // generate code
-                this.bindMobile(this.$boiler);
+                //this.bindMobile(this.$boiler);
             }
 
             return this;
