@@ -1,0 +1,18 @@
+{
+  "name": "wBoiler",
+  "version": "2.0.1",
+  "description": "A jQuery plugin development boilerplate with some simple scaffolding to start building jQuery plugins.",
+  "main": "wBoiler.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/websanova/wBoiler"
+  },
+  "author": {
+    "name" : "Websanova"
+  },
+  "homepage" : "http://wboiler.websanova.com",
+  "license": "MIT, GPL",
+  "dependencies": {
+    "grunt-contrib-jshint": ""
+  }
+}
