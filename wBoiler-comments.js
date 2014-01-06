@@ -25,7 +25,6 @@
   // live here.
   Boiler.prototype = {
     _generate: function () {
-      var _this = this;
 
       // Visual setup should be here.  If you have many components
       // it's a good idea to break it up into functions however keep
@@ -68,16 +67,15 @@
 
     // This is a common function useful for setting themes.  It will
     // support multiple themes separated by a space.
-    setTheme: function(theme) {
-      var i, ii, theme = theme.split(' ');
-
+    setTheme: function (theme) {
+      theme = theme.split(' ');
       this.$boiler.attr('class', (this.$boiler.attr('class') || '').replace(/wBoiler-theme-.+\s|wBoiler-theme-.+$/, ''));
       
-      for (i = 0, ii = theme.length; i < ii ; i++) {
+      for (var i = 0, ii = theme.length; i < ii ; i++) {
         this.$boiler.addClass('wBoiler-theme-' + theme[i]);
       }
     }
-  }
+  };
 
   // Any checks for specific browser support can go here. 
   $.support.placeholder = 'placeholder' in document.createElement('input');
@@ -143,7 +141,7 @@
 
     // Return the elements to maintain jQuery method chaining.
     return this.each(get);
-  }
+  };
 
   // Setup our default options.  Note an other option type objects
   // can also be setup in this area to keep them all in one place.

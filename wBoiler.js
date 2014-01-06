@@ -12,8 +12,6 @@
 
   Boiler.prototype = {
     _generate: function () {
-      var _this = this;
-
       this.$boiler = $('<div>boiler demo</div>');
 
       this._setOptions();
@@ -41,16 +39,15 @@
       }
     },
 
-    setTheme: function(theme) {
-      var i, ii, theme = theme.split(' ');
-
+    setTheme: function (theme) {
+      theme = theme.split(' ');
       this.$boiler.attr('class', (this.$boiler.attr('class') || '').replace(/wBoiler-theme-.+\s|wBoiler-theme-.+$/, ''));
       
-      for (i = 0, ii = theme.length; i < ii ; i++) {
+      for (var i = 0, ii = theme.length; i < ii ; i++) {
         this.$boiler.addClass('wBoiler-theme-' + theme[i]);
       }
     }
-  }
+  };
 
   $.support.placeholder = 'placeholder' in document.createElement('input');
 
@@ -104,7 +101,7 @@
     options = $.extend({}, $.fn.wBoiler.defaults, options);
 
     return this.each(get);
-  }
+  };
 
   $.fn.wBoiler.defaults = {
     theme: 'classic',

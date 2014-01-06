@@ -3,6 +3,9 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     jshint: {
       options: {
+        bitwise: true,
+        camelcase: true,
+        indent: 2,
         curly: true,
         eqeqeq: true,
         immed: true,
@@ -11,11 +14,17 @@ module.exports = function(grunt) {
         noarg: true,
         sub: true,
         undef: true,
+        unused: true,
         boss: true,
         eqnull: true,
+        white: true,
+        validthis: true,
+        quotmark: 'single',
         globals: {
           'window': true,
-          'jQuery': true
+          'jQuery': true,
+          'document': true,
+          'event': true
         }
       },
       files: {
