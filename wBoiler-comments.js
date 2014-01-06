@@ -118,6 +118,10 @@
 
           runOpt = function () {
             wBoiler = $.data(this, 'wBoiler');
+            // Or optionally if you want to allow on the fly creation when
+            // using set / get then change the line above to the ones below.
+            // options = $.extend({}, $.fn.wBoiler.defaults);
+            // wBoiler = $.proxy(get, this)();
 
             if (wBoiler) {
               if (wBoiler[options]) { wBoiler[options].apply(wBoiler, [value]); }
