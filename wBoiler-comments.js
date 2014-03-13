@@ -69,7 +69,7 @@
     // support multiple themes separated by a space.
     setTheme: function (theme) {
       theme = theme.split(' ');
-      this.$boiler.attr('class', (this.$boiler.attr('class') || '').replace(/wBoiler-theme-.+\s|wBoiler-theme-.+$/, ''));
+      this.$boiler.attr('class', (this.$boiler.attr('class') || '').replace(/\s?wBoiler-theme-(\S*)\s?/, ''));
       
       for (var i = 0, ii = theme.length; i < ii ; i++) {
         this.$boiler.addClass('wBoiler-theme-' + theme[i]);
