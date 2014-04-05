@@ -104,8 +104,8 @@
           func = (value !== undefined ? 'set' : 'get') + options.charAt(0).toUpperCase() + options.substring(1),
 
           setOpt = function () {
-            if (wBoiler[func]) { wBoiler[func].apply(wBoiler, [value]); }
             if (wBoiler.options[options]) { wBoiler.options[options] = value; }
+            if (wBoiler[func]) { wBoiler[func].apply(wBoiler, [value]); }
           },
 
           getOpt = function () {
