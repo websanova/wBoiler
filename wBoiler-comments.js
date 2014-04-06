@@ -152,7 +152,7 @@
   // If we need to support some basic mobile event binding this
   // is a good little function to get you started.
   $.fn.bindMobileEvents = function () {
-    $(this).on('touchstart touchmove touchend touchcancel', function () {
+    $(this).on('touchstart touchmove touchend touchcancel', function (event) {
       var touches = (event.changedTouches || event.originalEvent.targetTouches),
           first = touches[0],
           type = '';
